@@ -3,36 +3,59 @@
   const dispatch = createEventDispatcher();
 </script>
 
-<nav>
-  <ul class="selections">
-    <li class="selections__category" on:click={() => dispatch("home")}>Home</li>
-    <li class="selections__category" on:click={() => dispatch("aboutMe")}>
-      About Me
-    </li>
-    <li
-      class="selections__category"
-      on:click={() => dispatch("areasOfExpertise")}
-    >
-      Areas of Expertise
-    </li>
-    <li class="selections__category" on:click={() => dispatch("projects")}>
-      Projects
-    </li>
-    <li class="selections__category" on:click={() => dispatch("contactMe")}>
-      Contact Me
-    </li>
-  </ul>
+<nav class="selections">
+  <a
+    href="blank"
+    class="selections__category"
+    on:click={() => dispatch("aboutMe")}
+  >
+    About Me
+  </a>
+  <a
+    href="blank"
+    class="selections__category"
+    on:click={() => dispatch("areasOfExpertise")}
+  >
+    Areas of Expertise
+  </a>
+  <a
+    href="blank"
+    class="selections__category"
+    on:click={() => dispatch("projects")}
+  >
+    Projects
+  </a>
+  <a
+    href="blank"
+    class="selections__category"
+    on:click={() => dispatch("contactMe")}
+  >
+    Contact Me
+  </a>
 </nav>
 
 <style lang="scss">
   @import "../scss/global";
-  $selections: (1 : 0, 2: 2, 3: 4, 4: 6, 5: 8);
+  $selections: (
+    1: 0,
+    2: 2,
+    3: 4,
+    4: 6,
+    5: 8,
+  );
 
-  @each $selection, $duration in $selections {
-    .selections {
+  .selections {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @each $selection, $duration in $selections {
       &__category:nth-child(#{$selection}) {
         @include fade("selections__category", calc(10 - $duration));
       }
     }
-  };
+  }
 </style>

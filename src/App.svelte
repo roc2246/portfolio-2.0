@@ -9,11 +9,13 @@ let projects = false
 let contactMe = false
 </script>
 <header>
-    <h1>Riley Childs</h1>
-    <h4>Essential Web Solutions</h4>
+  <h2 class = "fade-in">Hi, I'm Riley Childs 
+    <br> Im looking foward to Becoming Yout Next Front-End Developer
+  </h2>
+  
 </header>
 <main>
-<Nav on:home={() =>!home ? home=true : !home}
+<Nav 
   on:aboutMe={() =>!aboutMe ? aboutMe=true : !aboutMe}
   on:areasOfExpertise={() =>!areasOfExpertise ? areasOfExpertise=true : !areasOfExpertise}
   on:aprojects={() =>!projects ? projects=true : !projects}
@@ -22,12 +24,8 @@ let contactMe = false
 
  <!--OPTIONS-->
 
-<!-- {#if home === true} -->
-  <!--Intro-->
-  <div class="selected-option">
+
     <h2 class = "fade-in">What would you like to know about me?</h2>
-  </div>
-  <!-- {/if} -->
 
   {#if aboutMe == true}
   <!--About Me-->
@@ -147,4 +145,5 @@ let contactMe = false
 .fade-in{
   @include fade("fade-in", 10);
 }
+
 </style>
