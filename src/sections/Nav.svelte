@@ -26,7 +26,7 @@
 
 <style lang="scss">
   @import "../scss/global";
-  $selections: (1 : 9, 2: 8, 3: 7, 4: 6, 5: 5);
+  $selections: (1 : 0, 2: 2, 3: 4, 4: 6, 5: 8);
 
   @each $selection, $duration in $selections {
     .selections {
