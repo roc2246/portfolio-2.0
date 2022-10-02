@@ -1,0 +1,70 @@
+@mixin fade($className) {
+        animation: #{$className} ease 10s;
+        -webkit-animation: #{$className} ease 10s;
+        -moz-animation: #{$className} ease 10s;
+        -o-animation: #{$className} ease 10s;
+        -ms-animation: #{$className} ease 10s;
+    @debug #{$className};
+      @keyframes #{$className} {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-moz-keyframes #{$className} {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-webkit-keyframes #{$className} {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-o-keyframes #{$className} {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+      @-ms-keyframes #{$className} {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      
+}
+
+@mixin leftToRight(){
+    .fadingEffect {
+    
+        animation: showHide 5s ease-in ;
+    }
+    @keyframes fadingEffect {
+        0% {
+           opacity: 0;
+           transform: translateX(-20px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0);
+        }
+     }   
+}

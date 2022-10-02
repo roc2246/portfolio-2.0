@@ -1,9 +1,34 @@
+<script>
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+</script>
+
 <nav>
-    <ul id="selections">
-      <li onclick = "newOption(1)">Home</li>
-      <li onclick = "newOption(2)">About Me</li>
-      <li onclick = "newOption(3)">Areas of Expertise</li>
-      <li onclick = "newOption(4)">Projects</li>
-      <li onclick = "newOption(5)">Contact Me</li>
-    </ul>
-  </nav>
+  <ul class="selections">
+    <li class="selections__category" on:click={() => dispatch("home")}>Home</li>
+    <li class="selections__category" on:click={() => dispatch("aboutMe")}>
+      About Me
+    </li>
+    <li
+      class="selections__category"
+      on:click={() => dispatch("areasOfExpertise")}
+    >
+      Areas of Expertise
+    </li>
+    <li class="selections__category" on:click={() => dispatch("projects")}>
+      Projects
+    </li>
+    <li class="selections__category" on:click={() => dispatch("contactMe")}>
+      Contact Me
+    </li>
+  </ul>
+</nav>
+
+<style lang="scss">
+  @import "../scss/global";
+  .selections {
+    &__category {
+      @include fade("selections__category");
+    }
+  }
+</style>

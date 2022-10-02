@@ -1,18 +1,35 @@
 <script>
+import Nav from './sections/Nav.svelte'
 
+// Navigation
+let home = false
+let aboutMe = false
+let areasOfExpertise = false
+let projects = false
+let contactMe = false
 </script>
 <header>
     <h1>Riley Childs</h1>
     <h4>Essential Web Solutions</h4>
 </header>
 <main>
+<Nav on:home={() =>!home ? home=true : !home}
+  on:aboutMe={() =>!aboutMe ? aboutMe=true : !aboutMe}
+  on:areasOfExpertise={() =>!areasOfExpertise ? areasOfExpertise=true : !areasOfExpertise}
+  on:aprojects={() =>!projects ? projects=true : !projects}
+  on:contactMe={() =>!contactMe ? contactMe=true : !contactMe}
+  />
+
  <!--OPTIONS-->
 
+{#if home === true}
   <!--Intro-->
   <div class="selected-option">
     <h2 class = "fade-in">What would you like to know about me?</h2>
   </div>
-  
+  {/if}
+
+  {#if aboutMe == true}
   <!--About Me-->
   <div class="selected-option">
     <h2>Your Friendly Neighborhood Fullstack Developer</h2>
@@ -32,7 +49,9 @@
             </p> 
     </div>
   </div>
+{/if}
 
+{#if areasOfExpertise === true}
   <!--Areas of Expertise-->
   <!--Image sources: https://devicon.dev/-->
   <div class="selected-option">
@@ -44,7 +63,9 @@
       <img class="language" src="https://tinyurl.com/bxxsy6jp" alt="PHP"/>
     </div>  
   </div>
+{/if}
 
+{#if projects === true}
   <!--Projects-->
   <div class="selected-option">
     <div id="project-flex-container">
@@ -85,7 +106,9 @@
       </div>
     </div>
   </div>
+{/if}
 
+{#if contactMe === true}
   <!--Contact Me-->
   <div class="selected-option">
     <form name="contact" method="post">
@@ -116,7 +139,7 @@
       </div>
     </div>
   </div>
-
+{/if}
 </main>
 
 <style lang="scss">
