@@ -2,7 +2,6 @@
 import Nav from './sections/Nav.svelte'
 
 // Navigation
-let home = false
 let aboutMe = false
 let areasOfExpertise = false
 let projects = false
@@ -29,7 +28,7 @@ let contactMe = false
 
   {#if aboutMe == true}
   <!--About Me-->
-  <div class="selected-option">
+  <div class="selected-option" id="about-me">
     <h2>Your Friendly Neighborhood Fullstack Developer</h2>
     <div class="about-me-row">
       <img class="about-me-image" src="images/euroCarve.jpg" alt="euroCarve">
@@ -52,21 +51,18 @@ let contactMe = false
 {#if areasOfExpertise === true}
   <!--Areas of Expertise-->
   <!--Image sources: https://devicon.dev/-->
-  <div class="selected-option">
-    <div id="areas-of-expertise">
+    <div class="selected-option" id="areas-of-expertise">
       <img class="language" src="https://tinyurl.com/6huwm662" alt="HTML 5"/>
       <img class="language" src="https://tinyurl.com/y2pu9scw" alt="CSS 3"/>
       <img class="language" src="https://tinyurl.com/ktbnbrrp" alt="JavaScript"/>
       <img class="language" src="https://tinyurl.com/2prwet54" alt="MySQL"/>
       <img class="language" src="https://tinyurl.com/bxxsy6jp" alt="PHP"/>
     </div>  
-  </div>
 {/if}
 
 {#if projects === true}
   <!--Projects-->
-  <div class="selected-option">
-    <div id="project-flex-container">
+    <div class="selected-option" id="projects">
       <div class="project">
         <p class="paragraph-main">
         <img class="project-image" src="images/projects/after3.png" alt="After 3">  
@@ -102,13 +98,12 @@ let contactMe = false
           <a href="https://github.com/roc2246/real_estate">Source Code</a> 
         </p>
       </div>
-    </div>
   </div>
 {/if}
 
 {#if contactMe === true}
   <!--Contact Me-->
-  <div class="selected-option">
+  <div class="selected-option" id="contact-me">
     <form name="contact" method="post">
       <!--Email-->
       <label for="email">Email</label>

@@ -5,28 +5,28 @@
 
 <nav class="selections">
   <a
-    href="blank"
+    href="#about-me"
     class="selections__category"
     on:click={() => dispatch("aboutMe")}
   >
     About Me
   </a>
   <a
-    href="blank"
+    href="#areas-of-expertise"
     class="selections__category"
     on:click={() => dispatch("areasOfExpertise")}
   >
     Areas of Expertise
   </a>
   <a
-    href="blank"
+    href="#projects"
     class="selections__category"
     on:click={() => dispatch("projects")}
   >
     Projects
   </a>
   <a
-    href="blank"
+    href="#contact-me"
     class="selections__category"
     on:click={() => dispatch("contactMe")}
   >
