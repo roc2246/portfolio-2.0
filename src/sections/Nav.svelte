@@ -26,9 +26,13 @@
 
 <style lang="scss">
   @import "../scss/global";
-  .selections {
-    &__category {
-      @include fade("selections__category");
+  $selections: (1 : 9, 2: 8, 3: 7, 4: 6, 5: 5);
+
+  @each $selection, $duration in $selections {
+    .selections {
+      &__category:nth-child(#{$selection}) {
+        @include fade("selections__category", calc(10 - $duration));
+      }
     }
-  }
+  };
 </style>

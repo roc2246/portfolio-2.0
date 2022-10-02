@@ -22,12 +22,12 @@ let contactMe = false
 
  <!--OPTIONS-->
 
-{#if home === true}
+<!-- {#if home === true} -->
   <!--Intro-->
   <div class="selected-option">
     <h2 class = "fade-in">What would you like to know about me?</h2>
   </div>
-  {/if}
+  <!-- {/if} -->
 
   {#if aboutMe == true}
   <!--About Me-->
@@ -143,5 +143,8 @@ let contactMe = false
 </main>
 
 <style lang="scss">
-
+@import './scss/global';
+.fade-in{
+  @include fade("fade-in", 10);
+}
 </style>
