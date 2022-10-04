@@ -11,5 +11,6 @@
     .areas-of-expertise__language{
         width: 5rem;
         height: auto;
+        margin: 1rem;
     }
 </style>
