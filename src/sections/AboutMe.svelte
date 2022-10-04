@@ -29,7 +29,7 @@
       flex-direction: row;
       justify-content: space-evenly;
       &--text{
-        width: 40%;
+        // width: 40%;
       }
     }
   }

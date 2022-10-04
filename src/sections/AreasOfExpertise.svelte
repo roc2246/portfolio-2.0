@@ -31,15 +31,21 @@
        <h2 class="areas-of-expertise__heading">
         Areas of Expertise
        </h2>
-        {#each stack as language}
+       <div class="areas-of-expertise__content">
+          {#each stack as language}
        <Language language={language.name} url={language.url}/>
        {/each}
+       </div>
+      
       </section>
 
       <style lang="scss">
         .areas-of-expertise{
-            display: flex;
+            &__content{
+                display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            }
+            
         }
       </style>

@@ -105,4 +105,8 @@
 </main>
 
 <style lang="scss">
+  main{
+    margin-left: min(10rem, 5%);
+    margin-right: min(10rem, 5%);
+  }
 </style>

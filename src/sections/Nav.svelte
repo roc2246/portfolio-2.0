@@ -1,7 +1,6 @@
 <script>
 </script>
 
-<h2 class="nav-header">What would you like to know about me?</h2>
 
 <nav class="selections">
   <a href="#about-me" class="selections__category"> About Me </a>
@@ -14,12 +13,6 @@
 
 <style lang="scss">
   @import "../scss/global";
-
-
-  .nav-header {
-    text-align: center;
-    margin-top: 2rem;
-  }
 
   .selections {
     display: flex;
