@@ -23,23 +23,13 @@ a:hover {
   color: whitesmoke;
 }
 
-
-
-/*Main Content*/
-
-/*About Me*/
-.about-me-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.selected-option{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.about-me-image {
-  width: 240px;
-  height: 143px;
-  border-style: inset;
-}
 
 /*Areas of Expertise*/
 

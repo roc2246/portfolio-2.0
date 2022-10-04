@@ -24,6 +24,7 @@
 
   .nav-header {
     text-align: center;
+    margin-top: 2rem;
   }
 
   .selections {

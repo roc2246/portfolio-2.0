@@ -1,6 +1,7 @@
 <script>
   import Header from "./sections/Header.svelte";
   import Nav from "./sections/Nav.svelte";
+  import AboutMe from './sections/AboutMe.svelte'
 
   // Navigation
   let aboutMe = false;
@@ -11,40 +12,10 @@
 
 <Header />
 <main>
-  <Nav
-    on:aboutMe={() => (!aboutMe ? (aboutMe = true) : !aboutMe)}
-    on:areasOfExpertise={() =>
-      !areasOfExpertise ? (areasOfExpertise = true) : !areasOfExpertise}
-    on:aprojects={() => (!projects ? (projects = true) : !projects)}
-    on:contactMe={() => (!contactMe ? (contactMe = true) : !contactMe)}
-  />
+  <Nav/>
+  <AboutMe/>
 
 
-  {#if aboutMe == true}
-    <!--About Me-->
-    <div class="selected-option" id="about-me">
-      <h2>Your Friendly Neighborhood Fullstack Developer</h2>
-      <div class="about-me-row">
-        <img
-          class="about-me-image"
-          src="images/euroCarve.jpg"
-          alt="euroCarve"
-        />
-        <p class="paragraph-main scroll">
-          I am a fullstack web developer located in beautiful Vermont. For over
-          twenty years, I have spent most of my time outside living the
-          snowboarder life. When off the slopes, I always wanted to dissect and
-          break down everything I encoutner in my path.
-          <br /><br />Ultimately, I turned to web development to satisfy this
-          need. It all started when I began customizing my MySpace page with
-          custom HTML and CSS made designs. Eventually, that lead to me taking
-          more classes in web development, further solidifying my developer
-          skills. Since then, web development and coding became some of the
-          biggest passions in my life.
-        </p>
-      </div>
-    </div>
-  {/if}
 
   {#if areasOfExpertise === true}
     <!--Areas of Expertise-->
