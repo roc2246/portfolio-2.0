@@ -53,10 +53,12 @@
 
 <style lang="scss">
   .projects {
+    width: 100%;
     &__content{
         display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
+    justify-content: space-evenly;
     }
    
   }

@@ -36,14 +36,6 @@ border-radius: 1rem;
 }
 
 
-/*Areas of Expertise*/
-
-.language {
-  width: 15%;
-  height: 15%;
-  margin: 8px;
-}
-
 /*Projects*/
 
 .project {
@@ -61,15 +53,9 @@ border-radius: 1rem;
   margin-bottom: 10px;
 }
 
-/*Contact Me*/
-form {
-  width: 100%;
-}
 
-label {
-  font-family: helvetica, arial, serif;
-}
 
+/* Refactor Later */
 input[type="email"],
 input[type="text"] {
   height: 30px;
@@ -103,25 +89,8 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:active {
-  border-color: rgb(182, 182, 6);
-}
 
-form > h4 {
-  width: 50%;
-}
 
-#social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-/*footer*/
-footer {
-  border-top: solid;
-}
 
-footer > p {
-  margin: 10px;
-}
+
