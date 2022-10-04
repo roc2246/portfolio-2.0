@@ -105,8 +105,8 @@
 </main>
 
 <style lang="scss">
+  @import './scss/global';
   main{
-    margin-left: min(10rem, 5%);
-    margin-right: min(10rem, 5%);
+   @include center();
   }
 </style>
