@@ -19,9 +19,6 @@
     on:contactMe={() => (!contactMe ? (contactMe = true) : !contactMe)}
   />
 
-  <!--OPTIONS-->
-
-  <h2 class="fade-in">What would you like to know about me?</h2>
 
   {#if aboutMe == true}
     <!--About Me-->

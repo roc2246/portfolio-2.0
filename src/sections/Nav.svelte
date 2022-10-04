@@ -1,37 +1,15 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
 </script>
 
+<h2 class="nav-header">What would you like to know about me?</h2>
+
 <nav class="selections">
-  <a
-    href="#about-me"
-    class="selections__category"
-    on:click={() => dispatch("aboutMe")}
-  >
-    About Me
-  </a>
-  <a
-    href="#areas-of-expertise"
-    class="selections__category"
-    on:click={() => dispatch("areasOfExpertise")}
-  >
+  <a href="#about-me" class="selections__category"> About Me </a>
+  <a href="#areas-of-expertise" class="selections__category">
     Areas of Expertise
   </a>
-  <a
-    href="#projects"
-    class="selections__category"
-    on:click={() => dispatch("projects")}
-  >
-    Projects
-  </a>
-  <a
-    href="#contact-me"
-    class="selections__category"
-    on:click={() => dispatch("contactMe")}
-  >
-    Contact Me
-  </a>
+  <a href="#projects" class="selections__category"> Projects </a>
+  <a href="#contact-me" class="selections__category"> Contact Me </a>
 </nav>
 
 <style lang="scss">
@@ -43,6 +21,10 @@
     4: 6,
     5: 8,
   );
+
+  .nav-header {
+    text-align: center;
+  }
 
   .selections {
     margin-left: auto;
