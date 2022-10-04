@@ -7,7 +7,7 @@
     <img class="about-me-image" src="images/euroCarve.jpg" alt="euroCarve" />
     <p class="about-me__content--text">
       I am a front-end web developer located in beautiful Vermont. My goal is to enter the tech field full
-      time.   
+      time. I have a passion for challenge and a knack for problem solving, both on and off the slopes.  
     </p>
   </div>
 </section>
@@ -21,6 +21,9 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      &--text{
+        max-width: 20rem;
+      }
     }
   }
 </style>
