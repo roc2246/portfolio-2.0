@@ -9,7 +9,7 @@
 
 <style>
     .areas-of-expertise__language{
-        width: 10rem;
+        width: 5rem;
         height: auto;
     }
 </style>

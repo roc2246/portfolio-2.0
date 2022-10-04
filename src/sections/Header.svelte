@@ -19,11 +19,8 @@
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../images/background-img.jpg");
-    // background-color: red;
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
+    
+      @include wholeScreen();
 
     &__text {
       text-align: center;
