@@ -1,7 +1,8 @@
 <script>
   import Header from "./sections/Header.svelte";
   import Nav from "./sections/Nav.svelte";
-  import AboutMe from './sections/AboutMe.svelte'
+  import AboutMe from './sections/AboutMe.svelte';
+  import AreasOfExpertise from './sections/AreasOfExpertise.svelte'
 
   // Navigation
   let aboutMe = false;
@@ -14,24 +15,8 @@
 <main>
   <Nav/>
   <AboutMe/>
+  <AreasOfExpertise />
 
-
-
-  {#if areasOfExpertise === true}
-    <!--Areas of Expertise-->
-    <!--Image sources: https://devicon.dev/-->
-    <div class="selected-option" id="areas-of-expertise">
-      <img class="language" src="https://tinyurl.com/6huwm662" alt="HTML 5" />
-      <img class="language" src="https://tinyurl.com/y2pu9scw" alt="CSS 3" />
-      <img
-        class="language"
-        src="https://tinyurl.com/ktbnbrrp"
-        alt="JavaScript"
-      />
-      <img class="language" src="https://tinyurl.com/2prwet54" alt="MySQL" />
-      <img class="language" src="https://tinyurl.com/bxxsy6jp" alt="PHP" />
-    </div>
-  {/if}
 
   {#if projects === true}
     <!--Projects-->
