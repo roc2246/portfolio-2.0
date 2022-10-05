@@ -17,13 +17,9 @@
   @import "../scss/global";
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.801)),
-      url("../images/sign.jpg");
-      image-rendering: crisp-edges;
- image-rendering: -moz-crisp-edges;          /* Firefox */
- image-rendering: -o-crisp-edges;            /* Opera */
- image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
- -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../images/sign.png");
+    
       @include wholeScreen();
 
     &__text {
