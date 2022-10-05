@@ -4,7 +4,7 @@
     A Passion for Challenge, A Knack for Problem-Solving
   </h2>
   <div class="about-me__content">
-    <img class="about-me-image" src="images/euroCarve.jpg" alt="euroCarve" />
+    <img class="about-me__content--image" src="images/euroCarve.jpg" alt="euroCarve" />
     <p class="about-me__content--text">
       I am a front-end web developer located in beautiful Vermont. My goal is to enter the tech field full
       time. I have a passion for challenge and a knack for problem solving, both on and off the slopes.  

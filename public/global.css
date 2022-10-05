@@ -18,13 +18,8 @@ p{
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
-  color: silver;
-}
-
-a:hover {
-  color: whitesmoke;
+  color: white;
 }
 
 .selected-option{
@@ -36,57 +31,32 @@ border-radius: 1rem;
 }
 
 
-/*Projects*/
-
-.project {
-  width: 240px;
-  margin: 20px;
-}
-
-.project-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-
 
 /* Refactor Later */
-input[type="email"],
-input[type="text"] {
-  height: 30px;
-}
 
-textarea {
-  height: 125px;
-}
 
-input[type="email"],
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-}
+button {
+  border-radius: .25rem;
+  border-color: white;
 
-button[type="submit"] {
+  padding: .5rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+
   background-color: black;
   color: white;
-  font-size: 16px;
-  font-weight: lighter;
-  padding: 12px 20px;
+  border: inset;
+  cursor: pointer;
+}
+
+button:hover{
   border: inset;
   border-color: white;
-  border-radius: 4px;
-  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+
 }
 
 
