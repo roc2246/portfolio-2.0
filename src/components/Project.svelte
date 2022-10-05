@@ -8,7 +8,7 @@
 
 <div class="project">
   <div class="project__image">
-    <img class="project-image" src={image} alt={title} />
+    <img  src={image} alt={title} />
   </div>
   <h4>{title}</h4>
   <p class="project__description">
@@ -32,6 +32,12 @@
 
     width: 10rem;
     margin: 1rem;
+    &__image{
+       & > img{
+        width: 10rem;
+        height: auto;
+       }
+    }
   }
 
   .btn{
