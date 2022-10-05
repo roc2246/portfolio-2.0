@@ -31,7 +31,7 @@
     flex-direction: column;
 
     width: 10rem;
-    margin: 1rem;
+    margin: 2rem;
     &__image{
        & > img{
         width: 10rem;
