@@ -6,6 +6,7 @@
 @mixin wholeScreen {
     height: 100vh;
     width: 100vw;
-    background-position: center;
+    background-position-x: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
