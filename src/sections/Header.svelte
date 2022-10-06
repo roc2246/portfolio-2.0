@@ -17,8 +17,8 @@
   @import "../scss/global";
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("../images/sign.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/background.jpg");
     
       @include wholeScreen();
 
@@ -28,7 +28,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
+font-weight: 200;
       &--primary {
         @include fade("fade-in", 5);
       }
