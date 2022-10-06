@@ -41,8 +41,8 @@
 
     &__image {
       & > img {
-        width: auto;
-        height: 10rem;
+        // width: auto;
+        // height: 10rem;
       }
     }
     &__btn-box {

@@ -4,6 +4,9 @@
 </script>
 
 <!--Projects-->
+<!-- Comments icon by Icons8 -->
+<!-- Webpage icon by Icons8 -->
+<!-- Permanent Job icon by Icons8 -->
 <section class="selected-option projects" id="projects">
   <h2 class="projects__heading">Projects</h2>
   <div class="projects__content">
