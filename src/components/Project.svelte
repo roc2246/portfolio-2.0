@@ -8,7 +8,7 @@
 
 <div class="project">
   <div class="project__image">
-    <img  src={image} alt={title} />
+    <img src={image} alt={title} />
   </div>
   <h4>{title}</h4>
   <!-- <p class="project__description">
@@ -23,34 +23,40 @@
       <button class="btn--project"> GitHub Repo </button>
     </a>
   </div>
-<!-- <hr class="project__post"> -->
+  <!-- <hr class="project__post"> -->
 </div>
 
 <style lang="scss">
+  @import "../scss/global";
+
   .project {
     display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
+    cursor: pointer;
     width: 10rem;
     margin: 2rem;
-    padding: .5rem;
+    padding: 0.5rem;
+    @include transition();
 
-    &__image{
-       & > img{
+    &__image {
+      & > img {
         width: auto;
         height: 10rem;
-       }
+      }
     }
-    &__btn-box{
-        padding-bottom: 1rem;
-        text-align: center;
-
+    &__btn-box {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+    &:hover {
+      @include enlarge();
     }
   }
 
-  .btn{
-    &--project{
-        margin-top: 1rem;
+  .btn {
+    &--project {
+      margin-top: 1rem;
     }
   }
 </style>
