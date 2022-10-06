@@ -17,7 +17,7 @@
   @import "../scss/global";
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, $header-gradient), rgba(0, 0, 0, $header-gradient)),
       url("../images/background.jpg");
     
       @include wholeScreen();
