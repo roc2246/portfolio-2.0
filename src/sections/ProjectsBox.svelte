@@ -11,7 +11,6 @@
       <Project
         image={project.image}
         title={project.title}
-        description={project.description}
         projectURL={project.demo}
         projectSource={project.source}
       />

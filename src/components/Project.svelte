@@ -1,7 +1,7 @@
 <script>
   export let image;
   export let title;
-  export let description;
+  // export let description;
   export let projectURL;
   export let projectSource;
 </script>
@@ -11,9 +11,9 @@
     <img  src={image} alt={title} />
   </div>
   <h4>{title}</h4>
-  <p class="project__description">
+  <!-- <p class="project__description">
     {description}
-  </p>
+  </p> -->
   <div class="project__btn-box">
     <a href={projectURL}>
       <button class="btn--project"> Demo </button>
@@ -30,28 +30,22 @@
   .project {
     display: flex;
     flex-direction: column;
-
+align-items: center;
     width: 10rem;
     margin: 2rem;
     padding: .5rem;
-    border-top: solid;
-    // border-left: solid;
-    // border-right: solid;
+
     &__image{
        & > img{
-        width: 10rem;
-        height: auto;
+        width: auto;
+        height: 10rem;
        }
     }
     &__btn-box{
-        border-bottom: solid;
         padding-bottom: 1rem;
+        text-align: center;
 
     }
-    // &__post{
-    //     margin-top: 0;
-    //     height: 2rem;
-    // }
   }
 
   .btn{
