@@ -39,12 +39,6 @@
     padding: 0.5rem;
     @include transition();
 
-    &__image {
-      & > img {
-        // width: auto;
-        // height: 10rem;
-      }
-    }
     &__btn-box {
       padding-bottom: 1rem;
       text-align: center;
