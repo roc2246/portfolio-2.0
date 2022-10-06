@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 </style>
