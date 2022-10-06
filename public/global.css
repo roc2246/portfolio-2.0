@@ -13,12 +13,12 @@ h1 {
   margin: 0;
 }
 
-h2{
+h2 {
   text-align: center;
   margin-top: 0;
 }
 
-p{
+p {
   line-height: 1.5rem;
 }
 
@@ -27,24 +27,18 @@ a {
   color: white;
 }
 
-.selected-option{
-margin: 2rem;
-padding: 2rem;
-
-border: solid;
-border-radius: 1rem;
+.selected-option {
+  margin: 2rem;
+  padding: 2rem;
 }
-
-
 
 /* Refactor Later */
 
-
 button {
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border-color: white;
 
-  padding: .5rem;
+  padding: 0.5rem;
 
   font-size: 1rem;
   font-weight: 600;
@@ -55,17 +49,10 @@ button {
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   border: inset;
   border-color: white;
   background-color: white;
   color: black;
   font-weight: 600;
-
 }
-
-
-
-
-
-
