@@ -10,7 +10,7 @@ const projects = [
     image: 'images/projects/comments-icon.png',
     title: 'Comment Section',
     // description: 'An interactive comments section.',
-    demo:'https://inquisitive-sherbet-d4d1c6.netlify.app/',
+    demo:'https://comment-section-fem.herokuapp.com/',
     source: 'https://github.com/roc2246/comments-svelte'
 },
 {
