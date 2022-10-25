@@ -6,7 +6,7 @@
     <span class="hero__text--primary"> Hi, I'm Riley Childs </span><br />
     <br />
     <span class="hero__text--secondary">
-      AKA, Your Next Front-End Developer
+      AKA, Your Next Web Developer
     </span><br />
     <br />
     <span class="hero__text--tertiary">Scroll down to find out more...</span>

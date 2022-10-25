@@ -15,6 +15,9 @@
     height: auto;
     margin: 1rem;
     @include transition();
+    & > img {
+      filter: brightness(0) invert(1);
+    }
     &:hover {
       @include enlarge();
     }

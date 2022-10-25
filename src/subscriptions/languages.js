@@ -18,7 +18,7 @@ const stack = [
     },
     {
         name: "Svelte",
-        url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" 
+        url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-plain.svg" 
     },
     {
         name: "Node",
@@ -27,6 +27,10 @@ const stack = [
     {
         name: "NPM",
         url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+    },
+    {
+        name: "Express",
+        url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
     }
 ]
 
