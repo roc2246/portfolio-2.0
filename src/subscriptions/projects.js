@@ -17,7 +17,7 @@ const projects = [
     image: 'images/projects/job-board-icon.png',
     title: 'Job Board Filter',
     // description: 'A page that lists web development jobs. The list can be sorted using different keywords.',
-    demo:'https://glittering-florentine-2346f0.netlify.app/',
+    demo:'https://job-listings-app.herokuapp.com/',
     source: 'https://github.com/roc2246/jobListings_frontEndMentor'
 }
 ]
