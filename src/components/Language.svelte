@@ -11,7 +11,7 @@
   @import "../scss/global";
   .areas-of-expertise__language {
     cursor: pointer;
-    width: 5rem;
+    width: 4rem;
     height: auto;
     margin: 1rem;
     @include transition();
